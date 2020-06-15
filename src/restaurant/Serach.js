@@ -42,7 +42,7 @@ export default class AutoCompletedText extends React.Component{
         return (
             <ul >
                 {
-                    suggestions.map((item, index) => (<li key={index} onClick={() => this.selectedText(item)}>{item}</li>))
+                    suggestions.map((item, index) => (<div key={index} onClick={() => this.selectedText(item)}>{item}</div>))
                 }
             </ul>
         );
